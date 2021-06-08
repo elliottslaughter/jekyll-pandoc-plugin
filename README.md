@@ -4,24 +4,17 @@ Jekyll Plugin for Using Pandoc-Ruby
 This is a plugin for using [pandoc][] as your markdown converter
 in [jekyll][].
 
-I am No Longer Maintaining This
+A Note on Maintainership
 -------------------------------
 
-**I switched to using [Hakyll](http://jaspervdj.be/hakyll/) a year or two ago,
-and stopped using this plugin. In the meantime, Jekyll has gone through
-some major updates. There are two reasonable sounding pull requests, aimed
-at making the plugin work with recent updates. I am
-not going to pull them, because I cannot test them, and I don't want to 
-pretend to maintain something that I am not really maintaining.**
+This repo has passed between maintainers several times. I (@elliottslaughter) maintain the current version at this fork. Feel to submit issues and PRs.
 
-You should probably use one of the more up-to-date forks instead of this repo.
+Please join me in thanking all the previous maintainers for their work on this project!
 
 Warnings for Existing Users
 ---------------------------
 
-### Jekyll < 1.0.0
-
-Thanks to @ivotron, the plugin has been rewritten to work with Jekyll 1.0.0. The old version, which works with Jekyll < 1.0.0, can be found on the for-use-with-jekyll-pre-1.0.0 branch. 
+I (@elliottslaughter) have tested the current version of this repo with Jekyll 3.9.0 and Pandoc 2.11.3.2. The main caveat is that Pandoc in this version does not support the extension syntax that is currently supported by pandoc-ruby. However in practice I have found this is not an issue as long as you set your HTML to specify an encoding of UTF-8 (which enables the smart quotes to work). I don't personally have a need to enable any other extensions.
 
 ### HTML5
 
